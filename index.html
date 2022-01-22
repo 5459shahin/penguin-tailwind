@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind project</title>
+    <!-- tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                penguin:'#fffbf0',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+   <header class="bg-penguin pb-32 pb-12">
+       <section class="container mx-auto flex items-center justify-around">
+          <div class="space-y-4">
+            <h1 class="text-5xl uppercase font-bold">
+                <span class="text-yellow-400">Be the Penguin</span>
+                <br>
+                <span>of winter</span>
+             </h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, optio?</p>
+             <button class="uppercase rounded-xl bg-[#a4bc46] py-3 px-7 text-white font-semibold">
+                <i class="fas fa-shopping-cart"></i>
+                buy now</button>
+          </div>
+          <div>
+              <img src="images/model.png" alt="">
+          </div>
+       </section>
+   </header>
+
+   <script src="https://kit.fontawesome.com/9e91d64331.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
